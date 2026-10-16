@@ -2,6 +2,19 @@
 
 A small, local-first, open-source scientific illustration workspace. Alpha 0.3.
 
+**Public app:** https://dragonkillerlaw.github.io/biocanvas-studio/
+
+The web interface is hosted on GitHub Pages. No ChatGPT login, OpenAI API,
+external font service or remote asset CDN is required. All editor code and
+bundled SVGs are served from the same site. Project autosave stays in each
+visitor's browser. To move existing work from another domain, save its
+`.biocanvas` file there and open that file on this site.
+
+`.github/workflows/pages.yml` tests the app, generates its source-download ZIP,
+and deploys `dist/` on pushes to `main`. Repository Settings → Pages must use
+GitHub Actions as the publishing source. The MCP server continues to run locally;
+GitHub Pages hosts the browser editor.
+
 BioCanvas combines a curated Bioicons library with one vector canvas, scientific workflow templates, and editable SVG/draw.io exports. It is a new editor, not a fork of BioRender or a merger of the draw.io/Inkscape/OpenBioFigure codebases.
 
 ## Run locally
