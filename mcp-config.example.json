@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "biocanvas": {
+      "command": "node",
+      "args": [
+        "/absolute/path/to/biocanvas-studio/scripts/mcp-server.mjs",
+        "--workspace",
+        "/absolute/path/to/your-figures"
+      ]
+    }
+  }
+}

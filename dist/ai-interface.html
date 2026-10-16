@@ -1,0 +1,39 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>BioCanvas AI 接口</title>
+<style>body{font:16px/1.7 system-ui,sans-serif;max-width:850px;margin:50px auto;padding:0 24px;color:#263e30;background:#fafbf8}pre{padding:20px;background:#edf1e9;overflow:auto;border-radius:10px}code{font-family:monospace}a{color:#356d40}h1{font-size:32px}table{border-collapse:collapse;width:100%}td,th{padding:10px;border-bottom:1px solid #cbd7c7;text-align:left}</style>
+<a href="./">← 返回画布</a><h1>BioCanvas AI 接口 v1</h1>
+<p>AI 和人使用同一份可编辑图稿。浏览器接口修改当前画布，并参与撤销与本地保存；命令行接口修改指定的本地项目文件。两者不会自动同步。</p>
+<h2>MCP 连接</h2><p>下载源码后，可把本地 MCP 服务接入 Codex 或其他支持 stdio 的客户端。需要 Node.js 20+，无需安装 npm 依赖。将下列路径替换为绝对路径；包含空格时加引号。</p>
+<pre>codex mcp add biocanvas -- node /path/to/biocanvas/scripts/mcp-server.mjs --workspace /path/to/figures</pre>
+<p>新建聊天加载工具：biocanvas_search_assets、biocanvas_list_projects、biocanvas_create_project、biocanvas_get_scene、biocanvas_apply_operations、biocanvas_export_scene。先读取 revision，再批量修改；导出返回文件内容及署名。MCP 仅操作指定文件夹内的 .biocanvas 文件，浏览器画布通过项目导入/下载交换内容。源码 README 包含完整配置示例。</p>
+<h2>浏览器调用</h2><pre>await window.bioCanvasAI.ready;
+const api = window.bioCanvasAI;
+api.search_assets({query: "拟南芥", module: "transcription"});
+const {revision} = api.get_scene();
+await api.apply_operations({
+  baseRevision: revision,
+  operations: [
+    {op: "add_node", node: {id: "plant-1", type: "asset",
+      assetId: "bioicons-ArabidopsisSeedlings", label: "拟南芥幼苗",
+      x: 90, y: 180, w: 120, h: 120}}
+  ]
+});
+const svg = await api.export_scene({format: "svg"});</pre>
+<h2>请求文件与命令行</h2><p>在“集成 → AI 操作接口”导入以下 JSON，即可下载响应。修改前先获取当前版本；手动编辑后旧版本会失效。接口不执行请求中的 JavaScript。</p>
+<pre>{"method":"get_scene"}</pre>
+<pre>node scripts/agent-cli.mjs --scene figure.biocanvas &lt; request.json
+
+{"method":"search_assets","params":{"query":"线虫","module":"movement"}}
+
+{"method":"apply_operations","params":{
+  "baseRevision":"从 get_scene 响应复制",
+  "operations":[{"op":"set_title","title":"BIO 251 实验示意图"}]
+}}
+
+{"method":"export_scene","params":{"format":"svg"}}</pre>
+<p>响应始终为 <code>{ok:true,result:…}</code> 或 <code>{ok:false,error:{code,message}}</code>。命令行失败返回非零退出码；不存在的项目文件在首次成功修改时创建。导出结果位于 <code>result.content</code>。命令行导出仅支持内置素材，自定义 SVG 请通过浏览器接口清理并导出。</p>
+<h2>接口能力</h2><table><tr><th>方法</th><th>行为</th></tr><tr><td>capabilities</td><td>列出版本、方法、操作、格式及课程模块</td></tr><tr><td>search_assets</td><td>query、module、license、limit（1–200）</td></tr><tr><td>get_scene</td><td>完整图稿、revision、布局提醒</td></tr><tr><td>apply_operations</td><td>原子批量修改；整个请求失败时不改图稿</td></tr><tr><td>export_scene</td><td>biocanvas、svg、drawio；附素材署名及布局提醒</td></tr></table>
+<p>操作：add_node {node}、update_node {id,changes}、remove_node {id}、connect {edge}、update_edge {id,changes}、remove_edge {id}、set_title {title}、layout {ids,columns,x,y,gapX,gapY}。节点类型为 asset、text、box。连线引用节点 id；删除节点会同时移除相连的线。</p>
+<p>每批最多 200 项操作。布局提醒只做近似检查，仍应查看最终 SVG/画布。SVG 内容可以作为预览；MCP 在本地运行，不包含远程模型或跨设备实时同步。</p>
+<h2>BIO 251 课程素材</h2><p>课程筛选覆盖基础移液、细菌正向遗传学、拟南芥转录调控、有机阴离子运输、Hill 反应、线虫运动与 GFP 观察。课程归类表示绘图用途，不表示每个图标都精确代表本课物种或仪器型号。</p>
+<p>尚缺 Eublaberus posticus 专用插图、马氏管解剖结构、菠菜类囊体/PSII、荧光素酶检测仪、特定 unc 基因的运动与 GFP 模式。通用叶片、膜载体和显微镜已明确标注为示意素材；不会把其他物种或观察结果冒充课程材料。</p>
+<p>来源：<a href="https://bioicons.com/">Bioicons</a>。每项素材的作者、许可证和固定版本源地址保留在 catalog.json；导出时附署名信息。原始 SVG 在呈现时会移除活动内容并重写内部标识符；此为技术处理，不是原作者背书。实验手册原文与图片未打包进站点。</p></html>

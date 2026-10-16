@@ -1,0 +1,1039 @@
+[
+  {
+    "name": "Pipette",
+    "category": "Lab_apparatus",
+    "license": "cc-0",
+    "author": "James-Lloyd",
+    "id": "Pipette",
+    "label": "移液器",
+    "src": "assets/Pipette.svg",
+    "source": "https://raw.githubusercontent.com/duerrsimon/bioicons/main/static/icons/cc-0/Lab_apparatus/James-Lloyd/Pipette.svg",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "modules": [
+      "basics",
+      "genetics",
+      "transcription",
+      "photosynthesis"
+    ],
+    "course": "BIO 251 Fall 2026"
+  },
+  {
+    "name": "erlenmeyer_filled",
+    "category": "Lab_apparatus",
+    "license": "cc-0",
+    "author": "KeHan",
+    "id": "erlenmeyer_filled",
+    "label": "锥形瓶",
+    "src": "assets/erlenmeyer_filled.svg",
+    "source": "https://raw.githubusercontent.com/duerrsimon/bioicons/main/static/icons/cc-0/Lab_apparatus/KeHan/erlenmeyer_filled.svg",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "modules": [
+      "genetics"
+    ],
+    "course": "BIO 251 Fall 2026"
+  },
+  {
+    "name": "incubator",
+    "category": "Lab_apparatus",
+    "license": "cc-0",
+    "author": "KeHan",
+    "id": "incubator",
+    "label": "培养箱",
+    "src": "assets/incubator.svg",
+    "source": "https://raw.githubusercontent.com/duerrsimon/bioicons/main/static/icons/cc-0/Lab_apparatus/KeHan/incubator.svg",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "modules": [
+      "genetics"
+    ],
+    "course": "BIO 251 Fall 2026"
+  },
+  {
+    "name": "qpcr_machine",
+    "category": "Lab_apparatus",
+    "license": "cc-0",
+    "author": "KeHan",
+    "id": "qpcr_machine",
+    "label": "PCR 仪",
+    "src": "assets/qpcr_machine.svg",
+    "source": "https://raw.githubusercontent.com/duerrsimon/bioicons/main/static/icons/cc-0/Lab_apparatus/KeHan/qpcr_machine.svg",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "modules": []
+  },
+  {
+    "name": "vortex_mixer",
+    "category": "Lab_apparatus",
+    "license": "cc-0",
+    "author": "KeHan",
+    "id": "vortex_mixer",
+    "label": "涡旋混合器",
+    "src": "assets/vortex_mixer.svg",
+    "source": "https://raw.githubusercontent.com/duerrsimon/bioicons/main/static/icons/cc-0/Lab_apparatus/KeHan/vortex_mixer.svg",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "modules": [
+      "basics",
+      "genetics",
+      "transcription"
+    ],
+    "course": "BIO 251 Fall 2026"
+  },
+  {
+    "name": "water_bath",
+    "category": "Lab_apparatus",
+    "license": "cc-0",
+    "author": "KeHan",
+    "id": "water_bath",
+    "label": "水浴锅",
+    "src": "assets/water_bath.svg",
+    "source": "https://raw.githubusercontent.com/duerrsimon/bioicons/main/static/icons/cc-0/Lab_apparatus/KeHan/water_bath.svg",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "modules": []
+  },
+  {
+    "name": "microscope-cartoon",
+    "category": "Lab_apparatus",
+    "license": "cc-0",
+    "author": "Derek-Croote",
+    "id": "microscope-cartoon",
+    "label": "显微镜",
+    "src": "assets/microscope-cartoon.svg",
+    "source": "https://raw.githubusercontent.com/duerrsimon/bioicons/main/static/icons/cc-0/Lab_apparatus/Derek-Croote/microscope-cartoon.svg",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "modules": [
+      "transport",
+      "movement"
+    ],
+    "course": "BIO 251 Fall 2026"
+  },
+  {
+    "name": "simple-syringe-cartoon",
+    "category": "Lab_apparatus",
+    "license": "cc-0",
+    "author": "Derek-Croote",
+    "id": "simple-syringe-cartoon",
+    "label": "注射器",
+    "src": "assets/simple-syringe-cartoon.svg",
+    "source": "https://raw.githubusercontent.com/duerrsimon/bioicons/main/static/icons/cc-0/Lab_apparatus/Derek-Croote/simple-syringe-cartoon.svg",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "modules": []
+  },
+  {
+    "name": "round-bottomed-flask-cartoon",
+    "category": "Lab_apparatus",
+    "license": "cc-0",
+    "author": "Derek-Croote",
+    "id": "round-bottomed-flask-cartoon",
+    "label": "圆底烧瓶",
+    "src": "assets/round-bottomed-flask-cartoon.svg",
+    "source": "https://raw.githubusercontent.com/duerrsimon/bioicons/main/static/icons/cc-0/Lab_apparatus/Derek-Croote/round-bottomed-flask-cartoon.svg",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "modules": []
+  },
+  {
+    "name": "chromatography",
+    "category": "Lab_apparatus",
+    "license": "cc-0",
+    "author": "Graham-Delafield",
+    "id": "chromatography",
+    "label": "层析柱",
+    "src": "assets/chromatography.svg",
+    "source": "https://raw.githubusercontent.com/duerrsimon/bioicons/main/static/icons/cc-0/Lab_apparatus/Graham-Delafield/chromatography.svg",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "modules": []
+  },
+  {
+    "name": "Yeast",
+    "category": "Microbiology",
+    "license": "cc-0",
+    "author": "Ewa-Oz",
+    "id": "Yeast",
+    "label": "酵母",
+    "src": "assets/Yeast.svg",
+    "source": "https://raw.githubusercontent.com/duerrsimon/bioicons/main/static/icons/cc-0/Microbiology/Ewa-Oz/Yeast.svg",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "modules": []
+  },
+  {
+    "name": "Bacteria_Swimming",
+    "category": "Microbiology",
+    "license": "cc-0",
+    "author": "James-Lloyd",
+    "id": "Bacteria_Swimming",
+    "label": "游动细菌",
+    "src": "assets/Bacteria_Swimming.svg",
+    "source": "https://raw.githubusercontent.com/duerrsimon/bioicons/main/static/icons/cc-0/Microbiology/James-Lloyd/Bacteria_Swimming.svg",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "modules": [
+      "genetics"
+    ],
+    "course": "BIO 251 Fall 2026"
+  },
+  {
+    "name": "Phage",
+    "category": "Microbiology",
+    "license": "cc-0",
+    "author": "James-Lloyd",
+    "id": "Phage",
+    "label": "噬菌体",
+    "src": "assets/Phage.svg",
+    "source": "https://raw.githubusercontent.com/duerrsimon/bioicons/main/static/icons/cc-0/Microbiology/James-Lloyd/Phage.svg",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "modules": []
+  },
+  {
+    "name": "96-well-plate-2d",
+    "category": "Microbiology",
+    "license": "cc-0",
+    "author": "OpenClipart",
+    "id": "96-well-plate-2d",
+    "label": "96 孔板",
+    "src": "assets/96-well-plate-2d.svg",
+    "source": "https://raw.githubusercontent.com/duerrsimon/bioicons/main/static/icons/cc-0/Microbiology/OpenClipart/96-well-plate-2d.svg",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "modules": [
+      "basics",
+      "transcription"
+    ],
+    "course": "BIO 251 Fall 2026"
+  },
+  {
+    "name": "agarose-gel",
+    "category": "Microbiology",
+    "license": "cc-0",
+    "author": "OpenClipart",
+    "id": "agarose-gel",
+    "label": "琼脂糖凝胶",
+    "src": "assets/agarose-gel.svg",
+    "source": "https://raw.githubusercontent.com/duerrsimon/bioicons/main/static/icons/cc-0/Microbiology/OpenClipart/agarose-gel.svg",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "modules": [
+      "genetics"
+    ],
+    "course": "BIO 251 Fall 2026"
+  },
+  {
+    "name": "generic-bacterium",
+    "category": "Microbiology",
+    "license": "cc-0",
+    "author": "Pauline Franz",
+    "id": "generic-bacterium",
+    "label": "细菌",
+    "src": "assets/generic-bacterium.svg",
+    "source": "https://raw.githubusercontent.com/duerrsimon/bioicons/main/static/icons/cc-0/Microbiology/Pauline_Franz/generic-bacterium.svg",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "modules": [
+      "genetics"
+    ],
+    "course": "BIO 251 Fall 2026"
+  },
+  {
+    "name": "plasmid-3",
+    "category": "Nucleic_acids",
+    "license": "cc-0",
+    "author": "EmilyADaniel",
+    "id": "plasmid-3",
+    "label": "质粒 03",
+    "src": "assets/plasmid-3.svg",
+    "source": "https://raw.githubusercontent.com/duerrsimon/bioicons/main/static/icons/cc-0/Nucleic_acids/EmilyADaniel/plasmid-3.svg",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "modules": [
+      "genetics"
+    ],
+    "course": "BIO 251 Fall 2026"
+  },
+  {
+    "name": "plasmid-4",
+    "category": "Nucleic_acids",
+    "license": "cc-0",
+    "author": "EmilyADaniel",
+    "id": "plasmid-4",
+    "label": "质粒 04",
+    "src": "assets/plasmid-4.svg",
+    "source": "https://raw.githubusercontent.com/duerrsimon/bioicons/main/static/icons/cc-0/Nucleic_acids/EmilyADaniel/plasmid-4.svg",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "modules": [
+      "genetics"
+    ],
+    "course": "BIO 251 Fall 2026"
+  },
+  {
+    "name": "DNA_double_helix",
+    "category": "Nucleic_acids",
+    "license": "cc-0",
+    "author": "James-Lloyd",
+    "id": "DNA_double_helix",
+    "label": "DNA 双螺旋",
+    "src": "assets/DNA_double_helix.svg",
+    "source": "https://raw.githubusercontent.com/duerrsimon/bioicons/main/static/icons/cc-0/Nucleic_acids/James-Lloyd/DNA_double_helix.svg",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "modules": [
+      "genetics"
+    ],
+    "course": "BIO 251 Fall 2026"
+  },
+  {
+    "name": "DNA",
+    "category": "Nucleic_acids",
+    "license": "cc-0",
+    "author": "Kumar",
+    "id": "DNA",
+    "label": "DNA",
+    "src": "assets/DNA.svg",
+    "source": "https://raw.githubusercontent.com/duerrsimon/bioicons/main/static/icons/cc-0/Nucleic_acids/Kumar/DNA.svg",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "modules": [
+      "genetics"
+    ],
+    "course": "BIO 251 Fall 2026"
+  },
+  {
+    "name": "chromatin-histones",
+    "category": "Nucleic_acids",
+    "license": "cc-0",
+    "author": "Pauline Franz",
+    "id": "chromatin-histones",
+    "label": "染色质",
+    "src": "assets/chromatin-histones.svg",
+    "source": "https://raw.githubusercontent.com/duerrsimon/bioicons/main/static/icons/cc-0/Nucleic_acids/Pauline_Franz/chromatin-histones.svg",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "modules": []
+  },
+  {
+    "name": "ssDNA-single-stranded",
+    "category": "Nucleic_acids",
+    "license": "cc-0",
+    "author": "Samuel-Nestor-Meckoni",
+    "id": "ssDNA-single-stranded",
+    "label": "单链 DNA",
+    "src": "assets/ssDNA-single-stranded.svg",
+    "source": "https://raw.githubusercontent.com/duerrsimon/bioicons/main/static/icons/cc-0/Nucleic_acids/Samuel-Nestor-Meckoni/ssDNA-single-stranded.svg",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "modules": [
+      "genetics"
+    ],
+    "course": "BIO 251 Fall 2026"
+  },
+  {
+    "name": "plasmid-2",
+    "category": "Nucleic_acids",
+    "license": "cc-0",
+    "author": "Simon Dürr",
+    "id": "plasmid-2",
+    "label": "质粒 02",
+    "src": "assets/plasmid-2.svg",
+    "source": "https://raw.githubusercontent.com/duerrsimon/bioicons/main/static/icons/cc-0/Nucleic_acids/Simon_D%C3%BCrr/plasmid-2.svg",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "modules": [
+      "genetics"
+    ],
+    "course": "BIO 251 Fall 2026"
+  },
+  {
+    "name": "restriction_enzyme",
+    "category": "Nucleic_acids",
+    "license": "cc-0",
+    "author": "Simon Dürr",
+    "id": "restriction_enzyme",
+    "label": "限制性内切酶",
+    "src": "assets/restriction_enzyme.svg",
+    "source": "https://raw.githubusercontent.com/duerrsimon/bioicons/main/static/icons/cc-0/Nucleic_acids/Simon_D%C3%BCrr/restriction_enzyme.svg",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "modules": [
+      "genetics"
+    ],
+    "course": "BIO 251 Fall 2026"
+  },
+  {
+    "name": "CRISPR_Cas9_vector",
+    "category": "Nucleic_acids",
+    "license": "cc-0",
+    "author": "umasstr",
+    "id": "CRISPR_Cas9_vector",
+    "label": "CRISPR / Cas9",
+    "src": "assets/CRISPR_Cas9_vector.svg",
+    "source": "https://raw.githubusercontent.com/duerrsimon/bioicons/main/static/icons/cc-0/Nucleic_acids/umasstr/CRISPR_Cas9_vector.svg",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "modules": []
+  },
+  {
+    "name": "atp",
+    "category": "Nucleic_acids",
+    "license": "cc-0",
+    "author": "Simon Dürr",
+    "id": "atp",
+    "label": "ATP",
+    "src": "assets/atp.svg",
+    "source": "https://raw.githubusercontent.com/duerrsimon/bioicons/main/static/icons/cc-0/Nucleic_acids/Simon_D%C3%BCrr/atp.svg",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "modules": [
+      "transport",
+      "photosynthesis"
+    ],
+    "course": "BIO 251 Fall 2026"
+  },
+  {
+    "name": "adp",
+    "category": "Nucleic_acids",
+    "license": "cc-0",
+    "author": "Simon Dürr",
+    "id": "adp",
+    "label": "ADP",
+    "src": "assets/adp.svg",
+    "source": "https://raw.githubusercontent.com/duerrsimon/bioicons/main/static/icons/cc-0/Nucleic_acids/Simon_D%C3%BCrr/adp.svg",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "modules": [
+      "transport",
+      "photosynthesis"
+    ],
+    "course": "BIO 251 Fall 2026"
+  },
+  {
+    "name": "T75_flask",
+    "category": "Lab_apparatus",
+    "license": "cc-0",
+    "author": "Marcel Tisch",
+    "id": "T75_flask",
+    "label": "培养瓶",
+    "src": "assets/T75_flask.svg",
+    "source": "https://raw.githubusercontent.com/duerrsimon/bioicons/main/static/icons/cc-0/Lab_apparatus/Marcel_Tisch/T75_flask.svg",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "modules": []
+  },
+  {
+    "name": "bioreactor",
+    "category": "Lab_apparatus",
+    "license": "cc-0",
+    "author": "Marcel Tisch",
+    "id": "bioreactor",
+    "label": "生物反应器",
+    "src": "assets/bioreactor.svg",
+    "source": "https://raw.githubusercontent.com/duerrsimon/bioicons/main/static/icons/cc-0/Lab_apparatus/Marcel_Tisch/bioreactor.svg",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "modules": []
+  },
+  {
+    "name": "isolation",
+    "category": "Microbiology",
+    "license": "cc-0",
+    "author": "Camila-Knecht",
+    "id": "isolation",
+    "label": "分离培养",
+    "src": "assets/isolation.svg",
+    "source": "https://raw.githubusercontent.com/duerrsimon/bioicons/main/static/icons/cc-0/Microbiology/Camila-Knecht/isolation.svg",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "modules": [
+      "genetics"
+    ],
+    "course": "BIO 251 Fall 2026"
+  },
+  {
+    "name": "inverted_microscope",
+    "category": "Microbiology",
+    "license": "cc-0",
+    "author": "Divakar-Badal",
+    "id": "inverted_microscope",
+    "label": "倒置显微镜",
+    "src": "assets/inverted_microscope.svg",
+    "source": "https://raw.githubusercontent.com/duerrsimon/bioicons/main/static/icons/cc-0/Microbiology/Divakar-Badal/inverted_microscope.svg",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "modules": [
+      "transport",
+      "movement"
+    ],
+    "course": "BIO 251 Fall 2026"
+  },
+  {
+    "name": "sonicator",
+    "category": "Lab_apparatus",
+    "license": "cc-0",
+    "author": "KeHan",
+    "id": "sonicator",
+    "label": "超声仪",
+    "src": "assets/sonicator.svg",
+    "source": "https://raw.githubusercontent.com/duerrsimon/bioicons/main/static/icons/cc-0/Lab_apparatus/KeHan/sonicator.svg",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "modules": []
+  },
+  {
+    "name": "Celegans",
+    "category": "Animals",
+    "license": "cc-0",
+    "author": "Ewa-Oz",
+    "id": "bioicons-Celegans",
+    "label": "秀丽隐杆线虫",
+    "src": "assets/bioicons-Celegans.svg",
+    "source": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-0/Animals/Ewa-Oz/Celegans.svg",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "modules": [
+      "movement"
+    ],
+    "keywords": [
+      "C.",
+      "elegans",
+      "worm",
+      "线虫",
+      "unc",
+      "GFP"
+    ],
+    "course": "BIO 251 Fall 2026",
+    "sourceRevision": "d29e766ea7580b8063c4f47b29e872db40a4d979",
+    "sha256": "6e7d51884b2c46e204abd20b7e515b480733d983749c8db4bafbc675cbcbc355",
+    "scopeNote": "Illustrative asset; not a measured result or an organism/structure identification."
+  },
+  {
+    "name": "ArabidopsisSeedlings",
+    "category": "Plants_Algae",
+    "license": "cc-0",
+    "author": "James-Lloyd",
+    "id": "bioicons-ArabidopsisSeedlings",
+    "label": "拟南芥幼苗",
+    "src": "assets/bioicons-ArabidopsisSeedlings.svg",
+    "source": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-0/Plants_Algae/James-Lloyd/ArabidopsisSeedlings.svg",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "modules": [
+      "transcription"
+    ],
+    "keywords": [
+      "Arabidopsis",
+      "seedling",
+      "拟南芥",
+      "幼苗",
+      "LUC"
+    ],
+    "course": "BIO 251 Fall 2026",
+    "sourceRevision": "d29e766ea7580b8063c4f47b29e872db40a4d979",
+    "sha256": "0d7b99972458c54bc9bc7dddeef015ec217a8391cae91bccb29006ecfd70f042",
+    "scopeNote": "Illustrative asset; not a measured result or an organism/structure identification."
+  },
+  {
+    "name": "ArabidopsisTopView",
+    "category": "Plants_Algae",
+    "license": "cc-0",
+    "author": "James-Lloyd",
+    "id": "bioicons-ArabidopsisTopView",
+    "label": "拟南芥莲座叶",
+    "src": "assets/bioicons-ArabidopsisTopView.svg",
+    "source": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-0/Plants_Algae/James-Lloyd/ArabidopsisTopView.svg",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "modules": [
+      "transcription"
+    ],
+    "keywords": [
+      "Arabidopsis",
+      "plant",
+      "拟南芥",
+      "植物"
+    ],
+    "course": "BIO 251 Fall 2026",
+    "sourceRevision": "d29e766ea7580b8063c4f47b29e872db40a4d979",
+    "sha256": "848d32e494e61671294d361fd403e3795e39831fa07b2eef79cc4e43c552de2a",
+    "scopeNote": "Illustrative asset; not a measured result or an organism/structure identification."
+  },
+  {
+    "name": "Leaf",
+    "category": "Plants_Algae",
+    "license": "cc-0",
+    "author": "Gina-Vong",
+    "id": "bioicons-Leaf",
+    "label": "叶片（通用示意）",
+    "src": "assets/bioicons-Leaf.svg",
+    "source": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-0/Plants_Algae/Gina-Vong/Leaf.svg",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "modules": [
+      "photosynthesis"
+    ],
+    "keywords": [
+      "leaf",
+      "菠菜",
+      "spinach",
+      "Hill",
+      "叶片"
+    ],
+    "course": "BIO 251 Fall 2026",
+    "sourceRevision": "d29e766ea7580b8063c4f47b29e872db40a4d979",
+    "sha256": "b5f8b57717567babbc7d9125963103fcf4e783af5646d8101167508fb446c2da",
+    "scopeNote": "Illustrative asset; not a measured result or an organism/structure identification."
+  },
+  {
+    "name": "Bacteria_colonies",
+    "category": "Cell_culture",
+    "license": "cc-0",
+    "author": "B--Gideon-Bergheim",
+    "id": "bioicons-Bacteria_colonies",
+    "label": "细菌菌落（通用示意）",
+    "src": "assets/bioicons-Bacteria_colonies.svg",
+    "source": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-0/Cell_culture/B--Gideon-Bergheim/Bacteria_colonies.svg",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "modules": [
+      "genetics"
+    ],
+    "keywords": [
+      "colonies",
+      "screening",
+      "菌落",
+      "筛选",
+      "Serratia"
+    ],
+    "course": "BIO 251 Fall 2026",
+    "sourceRevision": "d29e766ea7580b8063c4f47b29e872db40a4d979",
+    "sha256": "a96cdaf7fea8bbc0bbffccc908c35a7cdcbe62a2af284cab5791a2b554bfe1cf",
+    "scopeNote": "Illustrative asset; not a measured result or an organism/structure identification."
+  },
+  {
+    "name": "bacteria_culture_loop",
+    "category": "Cell_culture",
+    "license": "cc-0",
+    "author": "B--Gideon-Bergheim",
+    "id": "bioicons-bacteria_culture_loop",
+    "label": "接种环",
+    "src": "assets/bioicons-bacteria_culture_loop.svg",
+    "source": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-0/Cell_culture/B--Gideon-Bergheim/bacteria_culture_loop.svg",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "modules": [
+      "genetics"
+    ],
+    "keywords": [
+      "inoculation",
+      "loop",
+      "接种"
+    ],
+    "course": "BIO 251 Fall 2026",
+    "sourceRevision": "d29e766ea7580b8063c4f47b29e872db40a4d979",
+    "sha256": "e5108a17e3263fa8d24d8b4209fb15aa429e5601bf03394a602ff86667a6a350",
+    "scopeNote": "Illustrative asset; not a measured result or an organism/structure identification."
+  },
+  {
+    "name": "plasmid_library",
+    "category": "Genetics",
+    "license": "cc-0",
+    "author": "umasstr",
+    "id": "bioicons-plasmid_library",
+    "label": "质粒文库（通用示意）",
+    "src": "assets/bioicons-plasmid_library.svg",
+    "source": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-0/Genetics/umasstr/plasmid_library.svg",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "modules": [
+      "genetics"
+    ],
+    "keywords": [
+      "plasmid",
+      "library",
+      "质粒",
+      "文库"
+    ],
+    "course": "BIO 251 Fall 2026",
+    "sourceRevision": "d29e766ea7580b8063c4f47b29e872db40a4d979",
+    "sha256": "7642d58e5790553140a975a7c194bf12d57091861315d30c60b2408986878d62",
+    "scopeNote": "Illustrative asset; not a measured result or an organism/structure identification."
+  },
+  {
+    "name": "centrifuge",
+    "category": "Lab_apparatus",
+    "license": "cc-by-3.0",
+    "author": "Servier",
+    "id": "bioicons-centrifuge",
+    "label": "离心机",
+    "src": "assets/bioicons-centrifuge.svg",
+    "source": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Lab_apparatus/Servier/centrifuge.svg",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+    "modules": [
+      "genetics",
+      "transcription",
+      "photosynthesis"
+    ],
+    "keywords": [
+      "centrifuge",
+      "离心",
+      "提取"
+    ],
+    "course": "BIO 251 Fall 2026",
+    "sourceRevision": "d29e766ea7580b8063c4f47b29e872db40a4d979",
+    "sha256": "9bf00067cb086ee76991fd16503f2707cfe6fe377bf8cf6c8bb6e12b2975b28c",
+    "scopeNote": "Illustrative asset; not a measured result or an organism/structure identification."
+  },
+  {
+    "name": "spectrophotometer",
+    "category": "Lab_apparatus",
+    "license": "cc-by-3.0",
+    "author": "Servier",
+    "id": "bioicons-spectrophotometer",
+    "label": "分光光度计",
+    "src": "assets/bioicons-spectrophotometer.svg",
+    "source": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Lab_apparatus/Servier/spectrophotometer.svg",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+    "modules": [
+      "basics",
+      "transcription",
+      "photosynthesis"
+    ],
+    "keywords": [
+      "spectrophotometer",
+      "absorbance",
+      "分光",
+      "光度",
+      "吸光度",
+      "Bradford",
+      "Hill"
+    ],
+    "course": "BIO 251 Fall 2026",
+    "sourceRevision": "d29e766ea7580b8063c4f47b29e872db40a4d979",
+    "sha256": "ce1321b63264f9797666434d597f2a71c74d081533e53966aa63ca976481abe9",
+    "scopeNote": "Illustrative asset; not a measured result or an organism/structure identification."
+  },
+  {
+    "name": "cuvette",
+    "category": "Lab_apparatus",
+    "license": "cc-by-3.0",
+    "author": "Servier",
+    "id": "bioicons-cuvette",
+    "label": "比色皿",
+    "src": "assets/bioicons-cuvette.svg",
+    "source": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Lab_apparatus/Servier/cuvette.svg",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+    "modules": [
+      "transcription",
+      "photosynthesis"
+    ],
+    "keywords": [
+      "cuvette",
+      "比色皿",
+      "DCIP"
+    ],
+    "course": "BIO 251 Fall 2026",
+    "sourceRevision": "d29e766ea7580b8063c4f47b29e872db40a4d979",
+    "sha256": "e6e79323f1c944b7b83b947769a29541b87f82dc2fd80090592f47b9091cdd71",
+    "scopeNote": "Illustrative asset; not a measured result or an organism/structure identification."
+  },
+  {
+    "name": "microtube-open-translucent",
+    "category": "Microbiology",
+    "license": "cc-by-3.0",
+    "author": "Servier",
+    "id": "bioicons-microtube-open-translucent",
+    "label": "微量离心管（打开）",
+    "src": "assets/bioicons-microtube-open-translucent.svg",
+    "source": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Microbiology/Servier/microtube-open-translucent.svg",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+    "modules": [
+      "basics",
+      "genetics",
+      "transcription"
+    ],
+    "keywords": [
+      "microtube",
+      "eppendorf",
+      "离心管"
+    ],
+    "course": "BIO 251 Fall 2026",
+    "sourceRevision": "d29e766ea7580b8063c4f47b29e872db40a4d979",
+    "sha256": "58cdcb0386e81380812b8620aff0cef4644c7b3109e087d6bdaeeb6160e3f51e",
+    "scopeNote": "Illustrative asset; not a measured result or an organism/structure identification."
+  },
+  {
+    "name": "microtube-closed-translucent",
+    "category": "Microbiology",
+    "license": "cc-by-3.0",
+    "author": "Servier",
+    "id": "bioicons-microtube-closed-translucent",
+    "label": "微量离心管（闭合）",
+    "src": "assets/bioicons-microtube-closed-translucent.svg",
+    "source": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Microbiology/Servier/microtube-closed-translucent.svg",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+    "modules": [
+      "basics",
+      "genetics",
+      "transcription"
+    ],
+    "keywords": [
+      "microtube",
+      "eppendorf",
+      "离心管"
+    ],
+    "course": "BIO 251 Fall 2026",
+    "sourceRevision": "d29e766ea7580b8063c4f47b29e872db40a4d979",
+    "sha256": "243d4a201347c45239d995b7797286ee731e806c7b0c03d52a1bb88fb61d1bc1",
+    "scopeNote": "Illustrative asset; not a measured result or an organism/structure identification."
+  },
+  {
+    "name": "petri-dish-top-gray",
+    "category": "Microbiology",
+    "license": "cc-by-3.0",
+    "author": "Servier",
+    "id": "bioicons-petri-dish-top-gray",
+    "label": "培养皿（通用示意）",
+    "src": "assets/bioicons-petri-dish-top-gray.svg",
+    "source": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Microbiology/Servier/petri-dish-top-gray.svg",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+    "modules": [
+      "genetics",
+      "transport",
+      "movement"
+    ],
+    "keywords": [
+      "petri",
+      "dish",
+      "plate",
+      "培养皿",
+      "平板"
+    ],
+    "course": "BIO 251 Fall 2026",
+    "sourceRevision": "d29e766ea7580b8063c4f47b29e872db40a4d979",
+    "sha256": "f88debcff62f8e423f97fbe77c59f01f034699c64784fc4c3d629617e65a6e78",
+    "scopeNote": "Illustrative asset; not a measured result or an organism/structure identification."
+  },
+  {
+    "name": "electrophoresis-chamber",
+    "category": "Lab_apparatus",
+    "license": "cc-by-3.0",
+    "author": "Servier",
+    "id": "bioicons-electrophoresis-chamber",
+    "label": "电泳槽",
+    "src": "assets/bioicons-electrophoresis-chamber.svg",
+    "source": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Lab_apparatus/Servier/electrophoresis-chamber.svg",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+    "modules": [
+      "genetics"
+    ],
+    "keywords": [
+      "gel",
+      "electrophoresis",
+      "DNA",
+      "电泳槽"
+    ],
+    "course": "BIO 251 Fall 2026",
+    "sourceRevision": "d29e766ea7580b8063c4f47b29e872db40a4d979",
+    "sha256": "e6e45b41d2a26a1da75ba775faaa545ee4a178b7bc38a270910c96e8a9a8d8a6",
+    "scopeNote": "Illustrative asset; not a measured result or an organism/structure identification."
+  },
+  {
+    "name": "membrane-2d-bluelight",
+    "category": "Cell_membrane",
+    "license": "cc-by-3.0",
+    "author": "Servier",
+    "id": "bioicons-membrane-2d-bluelight",
+    "label": "脂质双层（通用示意）",
+    "src": "assets/bioicons-membrane-2d-bluelight.svg",
+    "source": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Cell_membrane/Servier/membrane-2d-bluelight.svg",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+    "modules": [
+      "transport",
+      "photosynthesis"
+    ],
+    "keywords": [
+      "membrane",
+      "lipid",
+      "膜运输",
+      "脂质双层"
+    ],
+    "course": "BIO 251 Fall 2026",
+    "sourceRevision": "d29e766ea7580b8063c4f47b29e872db40a4d979",
+    "sha256": "f0c7a3cf3176c0fe920f829b56e65ce7b75934b701f0cac8cb599a55492ad713",
+    "scopeNote": "Illustrative asset; not a measured result or an organism/structure identification."
+  },
+  {
+    "name": "carrier-protein-membrane-3",
+    "category": "Receptors_channels",
+    "license": "cc-by-3.0",
+    "author": "Servier",
+    "id": "bioicons-carrier-protein-membrane-3",
+    "label": "膜载体（非特定 OAT 结构）",
+    "src": "assets/bioicons-carrier-protein-membrane-3.svg",
+    "source": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Receptors_channels/Servier/carrier-protein-membrane-3.svg",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+    "modules": [
+      "transport"
+    ],
+    "keywords": [
+      "carrier",
+      "transport",
+      "organic",
+      "anion",
+      "OAT",
+      "膜运输",
+      "有机阴离子"
+    ],
+    "course": "BIO 251 Fall 2026",
+    "sourceRevision": "d29e766ea7580b8063c4f47b29e872db40a4d979",
+    "sha256": "c1e89bd849a2d607dd16f7b91f5d8403e8fc4a5231b61c77ebf03f3264d2b6d2",
+    "scopeNote": "Illustrative asset; not a measured result or an organism/structure identification."
+  },
+  {
+    "name": "sodium-potassium-pump-membrane-ions",
+    "category": "Receptors_channels",
+    "license": "cc-by-3.0",
+    "author": "Servier",
+    "id": "bioicons-sodium-potassium-pump-membrane-ions",
+    "label": "钠钾泵（通用示意）",
+    "src": "assets/bioicons-sodium-potassium-pump-membrane-ions.svg",
+    "source": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Receptors_channels/Servier/sodium-potassium-pump-membrane-ions.svg",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+    "modules": [
+      "transport"
+    ],
+    "keywords": [
+      "sodium",
+      "potassium",
+      "pump",
+      "钠钾泵",
+      "离子"
+    ],
+    "course": "BIO 251 Fall 2026",
+    "sourceRevision": "d29e766ea7580b8063c4f47b29e872db40a4d979",
+    "sha256": "febda25d5d1e04fc1c4a54ee6b87498bdb4929378ad522c88572687ee2c9565d",
+    "scopeNote": "Illustrative asset; not a measured result or an organism/structure identification."
+  },
+  {
+    "name": "actin-myosin",
+    "category": "Human_physiology",
+    "license": "cc-by-3.0",
+    "author": "Servier",
+    "id": "bioicons-actin-myosin",
+    "label": "肌动蛋白与肌球蛋白",
+    "src": "assets/bioicons-actin-myosin.svg",
+    "source": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Human_physiology/Servier/actin-myosin.svg",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+    "modules": [
+      "movement"
+    ],
+    "keywords": [
+      "actin",
+      "myosin",
+      "muscle",
+      "肌动蛋白",
+      "肌球蛋白",
+      "肌肉"
+    ],
+    "course": "BIO 251 Fall 2026",
+    "sourceRevision": "d29e766ea7580b8063c4f47b29e872db40a4d979",
+    "sha256": "0d2cf6e63be213e7584aad8a2cc49b22b0c696bb963980e25a0a259595adc2b5",
+    "scopeNote": "Illustrative asset; not a measured result or an organism/structure identification."
+  },
+  {
+    "name": "microscope-stereo",
+    "category": "Lab_apparatus",
+    "license": "cc-by-4.0",
+    "author": "DBCLS",
+    "id": "bioicons-microscope-stereo",
+    "label": "体视显微镜",
+    "src": "assets/bioicons-microscope-stereo.svg",
+    "source": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Lab_apparatus/DBCLS/microscope-stereo.svg",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "modules": [
+      "transport",
+      "movement"
+    ],
+    "keywords": [
+      "stereo",
+      "dissecting",
+      "microscope",
+      "体视",
+      "解剖",
+      "显微镜"
+    ],
+    "course": "BIO 251 Fall 2026",
+    "sourceRevision": "d29e766ea7580b8063c4f47b29e872db40a4d979",
+    "sha256": "831c4219b23115df2f31503534d80413b6fe6a98f17fc1bd16d0ca75a598ec16",
+    "scopeNote": "Illustrative asset; not a measured result or an organism/structure identification."
+  },
+  {
+    "name": "pipette-tip-box",
+    "category": "Lab_apparatus",
+    "license": "cc-by-4.0",
+    "author": "DBCLS",
+    "id": "bioicons-pipette-tip-box",
+    "label": "移液枪头盒",
+    "src": "assets/bioicons-pipette-tip-box.svg",
+    "source": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Lab_apparatus/DBCLS/pipette-tip-box.svg",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "modules": [
+      "basics",
+      "genetics",
+      "transcription"
+    ],
+    "keywords": [
+      "pipette",
+      "tip",
+      "移液",
+      "枪头"
+    ],
+    "course": "BIO 251 Fall 2026",
+    "sourceRevision": "d29e766ea7580b8063c4f47b29e872db40a4d979",
+    "sha256": "6295cc48c69725d978f45a942a2194e710cb00c20f354dbb45acd5661223a470",
+    "scopeNote": "Illustrative asset; not a measured result or an organism/structure identification."
+  },
+  {
+    "name": "tube-rack",
+    "category": "Lab_apparatus",
+    "license": "cc-by-4.0",
+    "author": "DBCLS",
+    "id": "bioicons-tube-rack",
+    "label": "试管架",
+    "src": "assets/bioicons-tube-rack.svg",
+    "source": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Lab_apparatus/DBCLS/tube-rack.svg",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "modules": [
+      "basics",
+      "genetics",
+      "transcription"
+    ],
+    "keywords": [
+      "tube",
+      "rack",
+      "试管架"
+    ],
+    "course": "BIO 251 Fall 2026",
+    "sourceRevision": "d29e766ea7580b8063c4f47b29e872db40a4d979",
+    "sha256": "76f6ce7f97cfb8b8b1895cd6309a18dcc918dc36a693a373d343fc26b71fa97b",
+    "scopeNote": "Illustrative asset; not a measured result or an organism/structure identification."
+  },
+  {
+    "name": "c-elegans-dumpy_mutant",
+    "category": "Animals",
+    "license": "cc-by-4.0",
+    "author": "DBCLS",
+    "id": "bioicons-c-elegans-dumpy_mutant",
+    "label": "线虫 Dumpy 表型（非指定 unc 基因）",
+    "src": "assets/bioicons-c-elegans-dumpy_mutant.svg",
+    "source": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Animals/DBCLS/c-elegans-dumpy_mutant.svg",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "modules": [
+      "movement"
+    ],
+    "keywords": [
+      "C.",
+      "elegans",
+      "dumpy",
+      "phenotype",
+      "线虫",
+      "表型"
+    ],
+    "course": "BIO 251 Fall 2026",
+    "sourceRevision": "d29e766ea7580b8063c4f47b29e872db40a4d979",
+    "sha256": "271a194ea94f4afac75fb2e539d18edba55e637fcade3456d8bc46bb23516bf8",
+    "scopeNote": "Illustrative asset; not a measured result or an organism/structure identification."
+  },
+  {
+    "name": "F-actin",
+    "category": "Intracellular_components",
+    "license": "cc-by-4.0",
+    "author": "Hugo-Wioland",
+    "id": "bioicons-F-actin",
+    "label": "丝状肌动蛋白",
+    "src": "assets/bioicons-F-actin.svg",
+    "source": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Intracellular_components/Hugo-Wioland/F-actin.svg",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "modules": [
+      "movement"
+    ],
+    "keywords": [
+      "F",
+      "actin",
+      "phalloidin",
+      "肌动蛋白",
+      "鬼笔环肽"
+    ],
+    "course": "BIO 251 Fall 2026",
+    "sourceRevision": "d29e766ea7580b8063c4f47b29e872db40a4d979",
+    "sha256": "a9da43aedfbe88f8c1b611510f9a3ac198817699d9aa097faf8674ec969e8cd6",
+    "scopeNote": "Illustrative asset; not a measured result or an organism/structure identification."
+  }
+]
