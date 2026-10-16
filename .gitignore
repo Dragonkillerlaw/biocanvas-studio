@@ -1,0 +1,10 @@
+node_modules/
+.env
+.env.*
+.openai/
+__pycache__/
+projects/
+qa-output/
+dist/biocanvas-source.zip
+*.tar.gz
+.DS_Store
