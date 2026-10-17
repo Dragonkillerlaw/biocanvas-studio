@@ -32,7 +32,7 @@ app's source-download link. Generated archives are excluded from Git.
 
 ## Current features
 
-- 55 vendored Bioicons SVG assets: the original 32 CC0 assets plus 23 course-related CC0/CC BY assets. Bilingual search, course/category filtering, author and source metadata, lazy SVG loading.
+- 59 vendored Bioicons SVG assets: the original 32 CC0 assets plus 23 course-related CC0/CC BY assets and 4 methods assets. Bilingual search, course/category filtering, author and source metadata, lazy SVG loading.
 - Drag/drop, move, resize, rotate, keyboard nudging, duplicate, reorder, text, and step boxes.
 - Directed connectors anchored to elements; drag elements to update connections.
 - Undo/redo, browser local autosave, portable `.biocanvas` JSON save/load.
@@ -45,7 +45,7 @@ app's source-download link. Generated archives are excluded from Git.
 
 | Tool | Implemented integration | Not implemented |
 | --- | --- | --- |
-| Bioicons | Vendored 55 illustrations and per-asset metadata | Entire catalog/live search |
+| Bioicons | Vendored 59 illustrations from Bioicons and Wikimedia Commons, with per-asset metadata | Entire catalog/live search |
 | draw.io | Export an uncompressed `.drawio` document with image vertices, text and graph edges | Embedded draw.io editor; draw.io import |
 | Inkscape | Static SVG import/export | Embedded desktop editor |
 | OpenBioFigure | Upstream link in integrations panel | Code integration and project interchange |
@@ -104,7 +104,7 @@ The server runs locally and has no API key, remote listener or model dependency.
 
 | MCP tool | Purpose |
 | --- | --- |
-| `biocanvas_search_assets` | Search 55 bundled assets by bilingual query, course module and license |
+| `biocanvas_search_assets` | Search 59 bundled assets by bilingual query, course module and license |
 | `biocanvas_list_projects` | List projects in the configured directory |
 | `biocanvas_create_project` | Create an empty project without overwriting files |
 | `biocanvas_get_scene` | Read the scene, its revision and layout warnings |
@@ -160,7 +160,7 @@ tool discovery, asset search, project persistence, all exports, revision conflic
 failed batch rollback, path restrictions, hard links and concurrent write locks.
 GitHub Actions runs the suite on Windows and Linux with Node 20 and 22.
 A standalone browser check validates all
-55 SVGs, lazy loading, filtering, AI edits, undo/redo, reload persistence and SVG
+59 SVGs, lazy loading, filtering, AI edits, undo/redo, reload persistence and SVG
 decoding. Run it with an installed Playwright package (Edge is used):
 
 ```sh
@@ -192,3 +192,9 @@ editor remains unverified.
 ## License
 
 MIT for BioCanvas source. See `LICENSE`, `THIRD_PARTY_NOTICES.md` and the per-asset catalog.
+
+## Methods illustration additions
+
+Four reusable SVGs cover a bench microcentrifuge (Andi-Wilson), orbital shaker and monochrome DNA (DBCLS), and a spin column/collection tube (Squidonius, Wikimedia Commons). The latter is public-domain artwork adapted by removing its chemistry inset and cropping to the column. It is a generic illustration, not an exact Promega SV model. Instrument names and exact reagents should remain explicit text where a generic asset would mislead.
+
+Run `python scripts/vendor-methods.py` and the browser checker to reproduce this collection. The catalog records pinned Bioicons revisions, source URLs, authors, licenses, file hashes, and modifications. Student diagrams and course documents are not part of this public collection.

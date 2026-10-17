@@ -1035,5 +1035,108 @@
     "sourceRevision": "d29e766ea7580b8063c4f47b29e872db40a4d979",
     "sha256": "a9da43aedfbe88f8c1b611510f9a3ac198817699d9aa097faf8674ec969e8cd6",
     "scopeNote": "Illustrative asset; not a measured result or an organism/structure identification."
+  },
+  {
+    "id": "bioicons-Centrifuge",
+    "name": "Centrifuge",
+    "category": "Microbiology",
+    "author": "Andi-Wilson",
+    "label": "台式微量离心机",
+    "src": "assets/bioicons-Centrifuge.svg",
+    "source": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Microbiology/Andi-Wilson/Centrifuge.svg",
+    "sourceRevision": "d29e766ea7580b8063c4f47b29e872db40a4d979",
+    "sha256": "6695ceb553ba02c160dacb7ed1044d43ce941730858a9de5a40d577a90c6abc1",
+    "license": "cc-by-4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "modules": [
+      "genetics"
+    ],
+    "keywords": [
+      "centrifuge",
+      "pellet",
+      "supernatant",
+      "离心",
+      "沉淀",
+      "上清"
+    ],
+    "scopeNote": "Generic illustrative asset; not an exact instrument model or measured result."
+  },
+  {
+    "id": "bioicons-shaker",
+    "name": "shaker",
+    "category": "Lab_apparatus",
+    "author": "DBCLS",
+    "label": "实验室摇床（通用示意）",
+    "src": "assets/bioicons-shaker.svg",
+    "source": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Lab_apparatus/DBCLS/shaker.svg",
+    "sourceRevision": "d29e766ea7580b8063c4f47b29e872db40a4d979",
+    "sha256": "07f5d57178a97d4c8d188d636c251b117deb48776974629882fb06c5be8b5a51",
+    "license": "cc-by-4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "modules": [
+      "genetics"
+    ],
+    "keywords": [
+      "shaker",
+      "shaking",
+      "recovery",
+      "摇床",
+      "振荡",
+      "复苏"
+    ],
+    "scopeNote": "Generic illustrative asset; not an exact instrument model or measured result."
+  },
+  {
+    "id": "bioicons-DNA_monochrome",
+    "name": "DNA_monochrome",
+    "category": "Nucleic_acids",
+    "author": "DBCLS",
+    "label": "DNA 双螺旋（黑白）",
+    "src": "assets/bioicons-DNA_monochrome.svg",
+    "source": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Nucleic_acids/DBCLS/DNA_monochrome.svg",
+    "sourceRevision": "d29e766ea7580b8063c4f47b29e872db40a4d979",
+    "sha256": "35f475771d2e301ec21bb24e9605cce0f533bc60e2b1a92cf265d916302df543",
+    "license": "cc-by-4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "modules": [
+      "genetics"
+    ],
+    "keywords": [
+      "DNA",
+      "double",
+      "helix",
+      "双螺旋",
+      "核酸"
+    ],
+    "scopeNote": "Generic illustrative asset; not an exact instrument model or measured result."
+  },
+  {
+    "id": "commons-spin-column",
+    "name": "Spin column and collection tube",
+    "category": "Lab_apparatus",
+    "author": "Squidonius",
+    "label": "离心柱与收集管（通用示意）",
+    "src": "assets/commons-spin-column.svg",
+    "source": "https://commons.wikimedia.org/wiki/File:Qiagen_Mini_Spin_Column.svg",
+    "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/5/53/Qiagen_Mini_Spin_Column.svg",
+    "sourceRevision": "Commons file revision 2012-12-07T18:02:00Z",
+    "sourceSha256": "5151fcf1e1ca8133a621390dbc0f3a6506fefe863d1e1446b644ba1c7ad95bff",
+    "sha256": "9c7a517ec1b9d2ccb6476a7bd74116a6f4eac63832aac4b1ae10b8fc7f7d4c6c",
+    "license": "public-domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/File:Qiagen_Mini_Spin_Column.svg#Licensing",
+    "modules": [
+      "genetics"
+    ],
+    "keywords": [
+      "spin",
+      "column",
+      "cleanup",
+      "elution",
+      "离心柱",
+      "洗脱",
+      "纯化"
+    ],
+    "modifications": "Chemistry inset and callout removed; viewBox cropped to column and collection tube.",
+    "scopeNote": "Adapted from a Qiagen column illustration. Generic column diagram, not a Promega SV product drawing."
   }
 ]
