@@ -1,6 +1,6 @@
 <!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>BioCanvas AI 接口</title>
 <style>body{font:16px/1.7 system-ui,sans-serif;max-width:850px;margin:50px auto;padding:0 24px;color:#263e30;background:#fafbf8}pre{padding:20px;background:#edf1e9;overflow:auto;border-radius:10px}code{font-family:monospace}a{color:#356d40}h1{font-size:32px}table{border-collapse:collapse;width:100%}td,th{padding:10px;border-bottom:1px solid #cbd7c7;text-align:left}</style>
-<a href="./">← 返回画布</a><h1>BioCanvas AI 接口 v1</h1>
+<div style="display:flex;justify-content:space-between;align-items:center"><a href="./">← 返回画布</a><a href="en/ai-interface.html" hreflang="en">English Guide ↗</a></div><h1>BioCanvas AI 接口 v1</h1>
 <p>AI 和人使用同一份可编辑图稿。浏览器接口修改当前画布，并参与撤销与本地保存；命令行接口修改指定的本地项目文件。两者不会自动同步。</p>
 <h2>MCP 连接</h2><p>下载源码后，可把本地 MCP 服务接入 Codex 或其他支持 stdio 的客户端。需要 Node.js 20+，无需安装 npm 依赖。将下列路径替换为绝对路径；包含空格时加引号。</p>
 <pre>codex mcp add biocanvas -- node /path/to/biocanvas/scripts/mcp-server.mjs --workspace /path/to/figures</pre>

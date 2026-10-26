@@ -6,6 +6,11 @@ export const MODULES = [
   ['transcription','拟南芥转录调控'], ['transport','有机阴离子运输'],
   ['photosynthesis','光合作用 · Hill 反应'], ['movement','线虫运动与 GFP']
 ];
+export const MODULES_EN = [
+  ['basics','Pipetting & Basic Lab Skills'], ['genetics','Bacterial Forward Genetics'],
+  ['transcription','Arabidopsis Transcriptional Regulation'], ['transport','Organic Anion Transport'],
+  ['photosynthesis','Photosynthesis · Hill Reaction'], ['movement','C. elegans Motility & GFP']
+];
 export function revision(scene) {
   const text=JSON.stringify(scene); let hash=2166136261;
   for(let i=0;i<text.length;i++) hash=Math.imul(hash^text.charCodeAt(i),16777619);
@@ -14,8 +19,8 @@ export function revision(scene) {
 export function searchAssets(catalog,{query='',module='',license='',limit=50}={}) {
   if(typeof query!=='string'||typeof module!=='string'||typeof license!=='string'||!Number.isInteger(limit)||limit<1||limit>200) throw Error('Invalid search parameters (limit 1–200).');
   const words=query.toLowerCase().split(/\s+/).filter(Boolean);
-  const matches=catalog.filter(a=>(!module||a.modules?.includes(module))&&(!license||a.license===license)&&words.every(w=>[a.id,a.name,a.label,a.category,...(a.keywords||[]),...(a.modules||[])].join(' ').toLowerCase().includes(w)));
-  return {total:matches.length,items:matches.slice(0,limit).map(({id,name,label,category,author,license,licenseUrl,source,src,modules,keywords,scopeNote})=>({id,name,label,category,author,license,licenseUrl,source,src,modules,keywords,scopeNote}))};
+  const matches=catalog.filter(a=>(!module||a.modules?.includes(module))&&(!license||a.license===license)&&words.every(w=>[a.id,a.name,a.label,a.labelEn||'',a.category,...(a.keywords||[]),...(a.modules||[])].join(' ').toLowerCase().includes(w)));
+  return {total:matches.length,items:matches.slice(0,limit).map(({id,name,label,labelEn,category,author,license,licenseUrl,source,src,modules,keywords,scopeNote})=>({id,name,label,labelEn:labelEn||name||label,category,author,license,licenseUrl,source,src,modules,keywords,scopeNote}))};
 }
 export function inspectScene(scene) {
   const warnings=[];
@@ -77,7 +82,7 @@ export function createAgentAPI({read,write,catalog,loadAssets}) {
   const snapshot=()=>{const scene=clone(read());return {revision:revision(scene),scene,warnings:inspectScene(scene)};};
   const api={
     version:'1.0',
-    capabilities:()=>({version:'1.0',methods:['search_assets','get_scene','apply_operations','export_scene'],operations:['add_node','update_node','remove_node','connect','update_edge','remove_edge','set_title','layout'],formats:['biocanvas','svg','drawio'],modules:MODULES}),
+    capabilities:()=>({version:'1.0',methods:['search_assets','get_scene','apply_operations','export_scene'],operations:['add_node','update_node','remove_node','connect','update_edge','remove_edge','set_title','layout'],formats:['biocanvas','svg','drawio'],modules:MODULES,modulesEn:MODULES_EN}),
     search_assets:params=>searchAssets(catalog(),params),
     get_scene:snapshot,
     async apply_operations({baseRevision,operations}={}) {

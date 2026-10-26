@@ -38,7 +38,8 @@ for name, category, author, label, words in ITEMS:
     source = BASE + f'{category}/{author}/{name}.svg'
     data = retrieve(source, name + '.svg')
     asset_id = 'bioicons-' + name
-    src = 'assets/' + asset_id + '.svg'
+    # Keep the stable asset ID; avoid a filename collision with Servier's centrifuge.svg on Windows.
+    src = 'assets/' + ('bioicons-benchtop-centrifuge' if name == 'Centrifuge' else asset_id) + '.svg'
     (ROOT / 'dist' / src).write_bytes(data)
     added.append(dict(id=asset_id, name=name, category=category, author=author,
         label=label, src=src, source=source, sourceRevision=REV,

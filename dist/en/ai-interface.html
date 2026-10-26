@@ -1,0 +1,39 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>BioCanvas AI Interface</title>
+<style>body{font:16px/1.7 system-ui,sans-serif;max-width:850px;margin:50px auto;padding:0 24px;color:#263e30;background:#fafbf8}pre{padding:20px;background:#edf1e9;overflow:auto;border-radius:10px}code{font-family:monospace}a{color:#356d40}h1{font-size:32px}table{border-collapse:collapse;width:100%}td,th{padding:10px;border-bottom:1px solid #cbd7c7;text-align:left}</style>
+<div style="display:flex;justify-content:space-between;align-items:center"><a href="./">← Back to Canvas</a><a href="../ai-interface.html" hreflang="zh-CN">中文说明 ↗</a></div><h1>BioCanvas AI Interface v1</h1>
+<p>AI agents and humans share the same editable illustration document model. The browser API modifies the active canvas and participates in undo/redo and local autosave; the command-line interface modifies designated local project files. The two do not synchronize automatically.</p>
+<h2>MCP Connection</h2><p>After downloading or cloning the source, connect the local MCP stdio server to Codex or any MCP client supporting stdio. Node.js 20+ is required; no npm packages need to be installed. Replace the placeholder paths below with absolute paths (quote paths containing spaces).</p>
+<pre>codex mcp add biocanvas -- node /path/to/biocanvas/scripts/mcp-server.mjs --workspace /path/to/figures</pre>
+<p>Open a new chat to load tools: <code>biocanvas_search_assets</code>, <code>biocanvas_list_projects</code>, <code>biocanvas_create_project</code>, <code>biocanvas_get_scene</code>, <code>biocanvas_apply_operations</code>, and <code>biocanvas_export_scene</code>. Always obtain the current revision first, then submit a batch of mutations; exports return document content and attribution. The MCP server only operates on <code>.biocanvas</code> project files inside the configured workspace folder. The repository README contains complete configuration examples.</p>
+<h2>Browser API</h2><pre>await window.bioCanvasAI.ready;
+const api = window.bioCanvasAI;
+api.search_assets({query: "Arabidopsis", module: "transcription"});
+const {revision} = api.get_scene();
+await api.apply_operations({
+  baseRevision: revision,
+  operations: [
+    {op: "add_node", node: {id: "plant-1", type: "asset",
+      assetId: "bioicons-ArabidopsisSeedlings", label: "Arabidopsis Seedlings",
+      x: 90, y: 180, w: 120, h: 120}}
+  ]
+});
+const svg = await api.export_scene({format: "svg"});</pre>
+<h2>Request Files & CLI</h2><p>Under “Integrations → AI Operations Interface”, import a JSON request file to execute operations and download the response. Always fetch the current revision before modifying; manual edits will invalidate older revisions. The interface never executes arbitrary JavaScript contained in requests.</p>
+<pre>{"method":"get_scene"}</pre>
+<pre>node scripts/agent-cli.mjs --scene figure.biocanvas &lt; request.json
+
+{"method":"search_assets","params":{"query":"worm","module":"movement"}}
+
+{"method":"apply_operations","params":{
+  "baseRevision":"copied from get_scene response",
+  "operations":[{"op":"set_title","title":"BIO 251 Experimental Diagram"}]
+}}
+
+{"method":"export_scene","params":{"format":"svg"}}</pre>
+<p>Responses always take the shape of <code>{"ok":true,"result":…}</code> or <code>{"ok":false,"error":{"code":…,"message":…}}</code>. CLI errors return a non-zero exit code. Nonexistent project files are created on the first successful mutation. Exported file content is returned in <code>result.content</code>. CLI exports support bundled assets only; sanitize and export custom SVGs through the browser editor.</p>
+<h2>API Capabilities</h2><table><tr><th>Method</th><th>Behavior</th></tr><tr><td>capabilities</td><td>Returns version, methods, operations, formats, and course modules</td></tr><tr><td>search_assets</td><td>query, module, license, limit (1–200)</td></tr><tr><td>get_scene</td><td>Complete scene document, revision, and layout warnings</td></tr><tr><td>apply_operations</td><td>Atomic batch mutation; rolls back completely on any validation failure</td></tr><tr><td>export_scene</td><td>biocanvas, svg, drawio; accompanied by attribution and layout warnings</td></tr></table>
+<p>Supported operations: <code>add_node {node}</code>, <code>update_node {id,changes}</code>, <code>remove_node {id}</code>, <code>connect {edge}</code>, <code>update_edge {id,changes}</code>, <code>remove_edge {id}</code>, <code>set_title {title}</code>, <code>layout {ids,columns,x,y,gapX,gapY}</code>. Node types: <code>asset</code>, <code>text</code>, <code>box</code>. Edges reference node IDs; removing a node automatically cascades to connected edges.</p>
+<p>A maximum of 200 operations may be applied per batch. Layout warnings provide approximate boundary and text overflow heuristics; inspect the exported SVG or canvas for precise verification. Exported SVG can also serve as a visual preview. The MCP server runs locally without external models or real-time cross-device sync.</p>
+<h2>BIO 251 Course Collection</h2><p>Curated course modules cover basic pipetting, bacterial forward genetics, Arabidopsis transcriptional regulation, organic anion transport, the Hill reaction, and C. elegans motility & GFP observation. Modules reflect illustrative teaching utility and do not claim that generic icons represent exact course strains or equipment models.</p>
+<p>Known gaps include species-specific illustrations for Eublaberus posticus, Malpighian tubule anatomy, spinach thylakoids/PSII, luminometer instruments, and gene-specific unc motility/GFP patterns. Generic leaves, membrane carriers, and microscopes are labeled explicitly as illustrative diagrams rather than unverified species replacements.</p>
+<p>Source artwork: <a href="https://bioicons.com/" target="_blank" rel="noopener">Bioicons</a> and Wikimedia Commons. Per-asset author, license, and pinned commit source URLs are preserved in <code>catalog.json</code>; exports include complete attribution metadata. Vector SVGs are sanitized into static primitives with rewritten internal IDs for security and style isolation. Course lab manuals and student experimental data are not included.</p></html>

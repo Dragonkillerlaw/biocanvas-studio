@@ -2,7 +2,8 @@
 
 A small, local-first, open-source scientific illustration workspace. Alpha 0.3.
 
-**Public app:** https://dragonkillerlaw.github.io/biocanvas-studio/
+**Public app (Chinese edition):** https://dragonkillerlaw.github.io/biocanvas-studio/  
+**Public app (English edition):** https://dragonkillerlaw.github.io/biocanvas-studio/en/
 
 The web interface is hosted on GitHub Pages. No ChatGPT login, OpenAI API,
 external font service or remote asset CDN is required. All editor code and
@@ -57,12 +58,26 @@ The app does not claim affiliation with these projects. Its source is MIT; third
 - `dist/core.js`: scene model, validation, geometry, templates, SVG and draw.io serializers.
 - `dist/svg-safety.js`: inert SVG parsing and a static vector allowlist; removes scripts, external resources and active SVG features.
 - `dist/app.js`: UI, commands, history, persistence, import/export orchestration.
-- `dist/assets/catalog.json`: asset provenance catalog.
+- `dist/i18n.js`: shared localization dictionary, locale detection, and asset label translation.
+- `dist/en/index.html`: English edition web interface.
+- `dist/en/ai-interface.html`: English AI interface and MCP reference guide.
+- `dist/assets/catalog.json`: asset provenance catalog with bilingual labels and search keywords.
 - `scripts/vendor-bioicons.py`: repeatable retrieval of the curated asset set.
 - `tests/core.test.js`: graph, schema and export tests.
+- `tests/i18n.test.js`: localization, bilingual search, template locale, and catalog validation suite.
 - `dist/agent-api.js`: shared transactional AI operations and revision checks.
 - `scripts/agent-cli.mjs`: JSON stdin/stdout interface for local agent workflows.
 - `dist/assets/normalized.json`: browser-sanitized vector geometry for dependency-free CLI export.
+
+## Language editions & switching
+
+BioCanvas Studio is available in Chinese (at the site root `/`) and English (at `/en/`):
+
+- **Shared state & persistence**: Both editions share the same browser `localStorage` autosave (`biocanvas-v1`) on the same origin. Switching between Chinese and English using the topbar or footer language links preserves the active scene and work in progress without clearing or overwriting canvas state.
+- **No silent rewriting**: User-authored scene text, custom labels, and imported project files are never translated or silently modified when switching languages.
+- **Locale-aware defaults**: Creating new scenes or loading templates in the English edition provides English defaults (`Bacterial Transformation · Workflow`, `PCR & Gel Analysis`, `Untitled Figure`), and newly added library assets receive English labels (`a.labelEn`). The Chinese edition retains its original Chinese defaults.
+- **Bilingual search**: Asset searches in both editions match English names/labels, Chinese names/labels, category tags, and course module keywords across all 59 curated illustrations.
+- **No build or network dependency**: Localization is handled entirely client-side via a shared ES module layer (`dist/i18n.js`), without remote translation APIs or framework dependencies. All asset and script references work seamlessly both at root and under the GitHub Pages subpath `/biocanvas-studio/`.
 
 ## AI interface
 
@@ -153,7 +168,7 @@ The asset adapter contract is `{id, name, label, category, author, license, lice
 npm test
 ```
 
-The 17 tests cover core graph/export behavior, atomic agent operations, stale
+The test suite covers core graph/export behavior, atomic agent operations, stale
 revision rejection (including asynchronous conflicts), bilingual course search,
 and actual CLI file creation/export. MCP subprocess tests cover initialization,
 tool discovery, asset search, project persistence, all exports, revision conflicts,
